@@ -1,7 +1,3 @@
- 
-#!/usr/bin/env ruby
-
-
 puts "the students of Villains Academy"
 puts "-------------"
 puts "Dr. Hannibal Lecter"
