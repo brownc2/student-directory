@@ -6,5 +6,5 @@
   # How to use
 
   ```shell
-  ruby student-directory.rb
+  ruby directory.rb
   ```
