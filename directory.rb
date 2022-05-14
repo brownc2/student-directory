@@ -9,7 +9,7 @@ def input_students
     #While the name is not empty, repeat this code
     while !name.empty? do
     #Add the student hash to the array
-        students << {name: name, cohort: :november}
+        students << {name: name, cohort: :november} 
         puts "Now we have #{students.count} students"
     #Get another student name from the user
         name = gets.chomp
@@ -18,19 +18,29 @@ def input_students
     return students
 end
 
+
+
+
+
 def print_header
 puts "The students of Villains Academy"
 puts "-------------"
 end
 
-def print(students)
+
+
+def print(students) 
   students.each.with_index(1) do |students, index|
-    puts "#{index}. #{students[:name]} (#{students[:cohort]} cohort)"
-   end
+    # Below is to print name beginning with specific letter
+    if students[:name].start_with?('B')
+    puts "#{index}. #{students[:name]} (#{students[:cohort]} cohort)" 
+    end
+  end
 end
 
 def print_footer(students)
-    puts "Overrall, we have #{students.count} great students"
+    
+    puts "Overrall, we have #{students.count} great students" 
 end
  
 
@@ -39,4 +49,5 @@ students = input_students
 print_header
 print(students)
 print_footer(students)
+
     
