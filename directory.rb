@@ -30,12 +30,13 @@ end
 
 
 def print(students) 
+    
   students.each.with_index(1) do |students, index|
-    # Below is to print name beginning with specific letter
-    if students[:name].start_with?('B')
+    # Below is to print name with below 12 characters
+    if students[:name].length < 12 
     puts "#{index}. #{students[:name]} (#{students[:cohort]} cohort)" 
     end
-  end
+    end
 end
 
 def print_footer(students)
